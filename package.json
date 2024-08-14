@@ -1,23 +1,33 @@
 {
-  "name": "venn-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "axios": "^1.7.3",
-    "ethers": "^6.13.2",
-    "express": "^4.19.2",
-    "undici-types": "^6.13.0",
-    "uuid": "^10.0.0",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.2.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "venn-custom-detection",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "ethers": "^6.13.2",
+        "express": "^4.19.2",
+        "undici-types": "^6.13.0",
+        "uuid": "^10.0.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^22.2.0",
+        "@types/supertest": "^6.0.2",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.4",
+        "supertest": "^7.0.0",
+        "ts-jest": "^29.2.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4"
+    },
+    "author": "",
+    "license": "ISC"
 }
