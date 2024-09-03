@@ -39,7 +39,8 @@ export class DetectionRequestTraceCall {
     input!: string
 
     @IsString()
-    output!: string
+    @IsOptional()
+    output?: string
 
     @IsString()
     value!: string
@@ -50,10 +51,12 @@ export class DetectionRequestTraceCall {
 
 export class DetectionRequestTrace {
     @IsString()
-    transactionHash!: string
+    @IsOptional()
+    transactionHash?: string
 
     @IsNumber()
-    blockNumber!: number
+    @IsOptional()
+    blockNumber?: number
 
     @IsEthereumAddress()
     @IsString()
@@ -76,7 +79,8 @@ export class DetectionRequestTrace {
     input!: string
 
     @IsString()
-    output!: string
+    @IsOptional()
+    output?: string
 
     @IsArray()
     @ValidateNested({ each: true })
@@ -84,9 +88,10 @@ export class DetectionRequestTrace {
     calls!: DetectionRequestTraceCall[]
 
     @IsArray()
+    @IsOptional()
     @ValidateNested({ each: true })
     @Type(() => DetectionRequestTraceLog)
-    logs!: DetectionRequestTraceLog[]
+    logs?: DetectionRequestTraceLog[]
 }
 
 export class DetectionRequest {
