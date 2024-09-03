@@ -3,6 +3,7 @@ import 'reflect-metadata'
 import dotenv from 'dotenv'
 import express from 'express'
 import http from 'http'
+import morgan from 'morgan'
 
 import { createLogger } from '@/helpers'
 import { router } from '@/router'
@@ -23,7 +24,15 @@ const URL = `http://${HOST}:${PORT}`
 const app = express()
 const server = http.createServer(app)
 
-app.use(express.json())
+app.use(
+    morgan(':method :url :status :res[content-length] - :response-time ms', {
+        stream: {
+            write: message => logger.info(message.trim()),
+        },
+    }),
+)
+
+app.use(express.json({ limit: '50mb' }))
 app.use(router)
 
 const handleShutDown = (signal: NodeJS.Signals) => {
