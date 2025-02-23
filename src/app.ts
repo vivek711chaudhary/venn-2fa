@@ -1,5 +1,6 @@
 import 'reflect-metadata'
 
+import cors from 'cors'
 import dotenv from 'dotenv'
 import express from 'express'
 import http from 'http'
@@ -15,8 +16,8 @@ export const logger = createLogger()
 dotenv.config()
 
 const MAX_SHUTDOWN_WAIT_TIME = 5000 // ms
-const PORT = Number(process.env.PORT)
-const HOST = process.env.HOST
+const PORT = Number(process.env.PORT) || 3000
+const HOST = process.env.HOST || 'localhost'
 const URL = `http://${HOST}:${PORT}`
 
 // App setup
@@ -32,6 +33,7 @@ app.use(
     }),
 )
 
+app.use(cors())
 app.use(express.json({ limit: '50mb' }))
 app.use(router)
 
