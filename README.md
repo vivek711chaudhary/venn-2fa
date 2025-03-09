@@ -72,9 +72,7 @@ This boilerplate is built using `Express.js`, and written in `TypeScript` using 
 You can use it as-is by adding your own security logic to it, or as a reference point when using a different programming language.
 
 **Notes on the API**
-1. Venn expects your detector to be available on port `80`
-2. Venn expects your detector to be available at: `$HOST/detect/:detectorName`
-3. Your detector will get a `DetectionRequest`, and is expected to respond with a `DetectionResponse`
+1. Your detector will get a `DetectionRequest`, and is expected to respond with a `DetectionResponse`
 
 See our [API Reference](https://github.com/ironblocks/venn-custom-detection/blob/master/docs/requests-responses.docs.md) for more information.
 
