@@ -1,67 +1,41 @@
-import { Expose, plainToInstance } from 'class-transformer'
-
-import { DetectionRequest } from '@/modules/detection-module/dtos/requests'
-
-export type DetectionResponseInitOpts = {
-    request: DetectionRequest
-    detectionInfo: {
-        error?: boolean
-        message?: string
-        detected: boolean
-    }
-}
+import { IsBoolean, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class DetectionResponse {
-    requestId: string
-    chainId: number
-    detected: boolean
-    error?: boolean
-    message?: string
-    protocolAddress?: string
-    protocolName?: string
-    additionalData?: Record<string, unknown>
+    @IsString()
+    @IsNotEmpty()
+    transactionId: string;
 
-    constructor({
-        request,
-        detectionInfo: { error, message, detected },
-    }: DetectionResponseInitOpts) {
-        this.requestId = request.id ?? ''
-        this.chainId = request.chainId
-        this.protocolAddress = request.protocolAddress ?? ''
-        this.protocolName = request.protocolName ?? ''
-        this.additionalData = request.additionalData
-        this.error = error
-        this.message = message
-        this.detected = detected
+    @IsString()
+    @IsOptional()
+    requestId?: string;
+
+    @IsBoolean()
+    detected: boolean;
+
+    @IsString()
+    message: string;
+
+    @IsOptional()
+    @IsString()
+    protocolAddress?: string;
+
+    @IsOptional()
+    @IsString()
+    protocolName?: string;
+
+    constructor(data: {
+        transactionId: string;
+        requestId?: string;
+        detected: boolean;
+        message: string;
+        protocolAddress?: string;
+        protocolName?: string;
+    }) {
+        this.transactionId = data.transactionId;
+        this.requestId = data.requestId;
+        this.detected = data.detected;
+        this.message = data.message;
+        this.protocolAddress = data.protocolAddress;
+        this.protocolName = data.protocolName;
     }
-}
-
-class DetectionResponseDTO {
-    @Expose()
-    requestId!: string
-
-    @Expose()
-    chainId!: number
-
-    @Expose()
-    detected!: boolean
-
-    @Expose()
-    error?: boolean
-
-    @Expose()
-    message?: string
-
-    @Expose()
-    protocolAddress?: string
-
-    @Expose()
-    protocolName?: string
-
-    @Expose()
-    additionalData?: Record<string, unknown>
-}
-
-export const toDetectionResponse = (detectorEntity: DetectionResponse): DetectionResponseDTO => {
-    return plainToInstance(DetectionResponseDTO, detectorEntity)
 }

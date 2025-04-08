@@ -16,7 +16,7 @@ export const logger = createLogger()
 dotenv.config()
 
 const MAX_SHUTDOWN_WAIT_TIME = 5000 // ms
-const PORT = Number(process.env.PORT) || 3000
+const PORT = 5000
 const HOST = process.env.HOST || 'localhost'
 const URL = `http://${HOST}:${PORT}`
 

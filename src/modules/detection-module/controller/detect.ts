@@ -3,7 +3,7 @@ import { Request, Response } from 'express'
 
 import { logger } from '@/app'
 import { ErrorHandler, validateRequest } from '@/helpers'
-import { DetectionRequest, toDetectionResponse } from '@/modules/detection-module/dtos'
+import { DetectionRequest } from '@/modules/detection-module/dtos'
 import { DetectionService } from '@/modules/detection-module/service'
 import { PublicClassFields } from '@/types'
 
@@ -25,7 +25,7 @@ export const detect = async (
         logger.debug('detect request finished succesfully')
 
         // return response
-        res.json(toDetectionResponse(result))
+        res.json(result)
     } catch (error) {
         // handle errors
         ErrorHandler.processApiError(res, error)

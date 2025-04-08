@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.transaction-card {
+  border-left: 4px solid #1976d2;
+  margin-bottom: 16px;
+}
+
+.transaction-card.high-risk {
+  border-left-color: #d32f2f;
+}
+
+.transaction-card.verified {
+  border-left-color: #2e7d32;
+}
+
+.verification-form {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.verification-status {
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.verification-status.pending {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.verification-status.verified {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.verification-status.failed {
+  background-color: #ffebee;
+  color: #d32f2f;
+} 
