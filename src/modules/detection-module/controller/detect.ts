@@ -1,5 +1,5 @@
-import { plainToInstance } from 'class-transformer'
 import { Request, Response } from 'express'
+import { validate } from 'class-validator'
 
 import { logger } from '@/app'
 import { ErrorHandler, validateRequest } from '@/helpers'
@@ -11,13 +11,17 @@ export const detect = async (
     req: Request<Record<string, string>, PublicClassFields<DetectionRequest>>,
     res: Response,
 ) => {
-    const request = plainToInstance(DetectionRequest, req.body)
+    // Cast the request body as the DetectionRequest type
+    const request = req.body as DetectionRequest
 
-    logger.debug(`detect request started. Request id: ${request.id}`)
+    logger.debug(`detect request started. Request id: ${request.id || 'unknown'}`)
 
     try {
-        // validate request
-        await validateRequest(request)
+        // Validate the request manually if needed
+        const errors = await validate(request as any)
+        if (errors.length > 0) {
+            throw new Error(`Validation failed: ${errors.map(e => Object.values(e.constraints || {}).join(', ')).join('; ')}`)
+        }
 
         // perform business logic
         const result = DetectionService.detect(request)

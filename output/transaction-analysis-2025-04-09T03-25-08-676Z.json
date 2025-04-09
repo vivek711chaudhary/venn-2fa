@@ -1,0 +1,1454 @@
+[
+  {
+    "transactionHash": "0xdb256b60f84ba1a2d5a1adebf6d54781fd14b2fd71e2eae0196d24a243cf577f",
+    "from": "0xfd15c3932a783e324b1a63a174014cd105dbdea8",
+    "to": "0x4dbd4fc535ac27206064b68ffcf827b0a60bab3f",
+    "value": "0.0021 ETH",
+    "timestamp": "2025-03-15T18:09:59.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction"
+    ]
+  },
+  {
+    "transactionHash": "0xfe5e42c8e5816bae002a38394e51399d5d2464c67db47997a9075fbc0090128d",
+    "from": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+    "to": "0xfd15c3932a783e324b1a63a174014cd105dbdea8",
+    "value": "0.0023753 ETH",
+    "timestamp": "2025-03-15T18:08:11.000Z",
+    "riskScore": 15,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Interaction with monitored address: 0xfd15c3932a783e324b1a63a174014cd105dbdea8"
+    ]
+  },
+  {
+    "transactionHash": "0x19dbdaa91c4631844f41d49c80a9378cfe6b8c76ab9bc7899619ed41600781c9",
+    "from": "0x8025357496557dc7a72835615be5311fe6d04ff0",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0.0002 ETH",
+    "timestamp": "2025-04-09T03:24:23.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ]
+  },
+  {
+    "transactionHash": "0x2c99cc7f9d37c7fb8856bf4b479443648ec1492b62d5d5e5eec6c31cf3e96409",
+    "from": "0x896d92fef10e76a0c3374bc8802e3da0914eda8b",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:23.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x9054684c3342d56b8daef9a3f8942d8c4361e60dff3dcc3610c2eab204e1cccd",
+    "from": "0x15374582b8a2968b40794fedeb20542d9d35c005",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0.001982195516032091 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ]
+  },
+  {
+    "transactionHash": "0xf28c9c68211b6b0c696797e63613bd4f2cec72fc91a65deb9ac82b3f1da51381",
+    "from": "0xa3a648ee0bb63c6d2ee196bbb2ec0b224563a577",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:47.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x44834e6462f1e2f037f928577e9d08195055a9307f1792574dfb961b4e40e7c8",
+    "from": "0x896d92fef10e76a0c3374bc8802e3da0914eda8b",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:47.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x4f09e0fc5b1aae92b5f574de9ce4939dae4bc3edc97ec6abf103ea9970812414",
+    "from": "0xeab76d518a4f0a7604ebdb6baab185a9e6427368",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:11.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x1877349bfb732eba3eca3298334db4c4f004cba0db37b7f0cd679aadc6e74d2f",
+    "from": "0x1d07f3070f29bfbc5486e6c01d2f56ece3b10b63",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0.0018 ETH",
+    "timestamp": "2025-04-09T03:23:11.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ]
+  },
+  {
+    "transactionHash": "0x80fb1b58e8920592761d80ffb7e436a28b71f62200106c69fc1dac644dedf12e",
+    "from": "0xff8ba4d1fc3762f6154cc942ccf30049a2a0cec6",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:11.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0xf84510bb6f36a5d993a6bdd7f7d5571a7e6f2f889535a7af797f5998a6fa6888",
+    "from": "0xca189836c6177fadef21338a49c9cf86e16c6bc5",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0.5754818924300181 ETH",
+    "timestamp": "2025-04-09T03:22:23.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ]
+  },
+  {
+    "transactionHash": "0x7e6b9e091580beb4df685dedf7a4ab5af7e555ea94af03313dec8ba281c75e25",
+    "from": "0x3ba43201eb92769cccfc2383b48312d0d9b48332",
+    "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "value": "0.000007891474247788 ETH",
+    "timestamp": "2025-04-09T03:22:23.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0.000007891474247788 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x930705912d28e4149dee6d47544a3c40e7c00256391320e3a3798a49f89c5e88",
+    "from": "0xeca74721caa0ed4c060ef948674fd7ce9c405964",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.3404971109532121 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
+    ]
+  },
+  {
+    "transactionHash": "0x4da3bfff0f14659c6176d2d3a5bbf7442c162702bb08553cf999db775619fc22",
+    "from": "0x665f6572000c972f282e0c77949c2080f1003632",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x7f4785c9c1f5dcb8b8a09fb91f00713e5bf3f992a710b52a272bacce461616c4",
+    "from": "0xb1b2d032aa2f52347fbcfd08e5c3cc55216e8404",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x8e70e57ced24d5001926e45dd10d44551e0b1d27c2bb5c9a5c069c1f539cffef",
+    "from": "0xeca74721caa0ed4c060ef948674fd7ce9c405964",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.0612005144000276 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
+    ]
+  },
+  {
+    "transactionHash": "0x2f36880709012dc1f25eb940e094d730c91d18cd71871833d92512240aec350a",
+    "from": "0xeca74721caa0ed4c060ef948674fd7ce9c405964",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.34735405480492626 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 45,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xcc27203ba5334762a36391000bd70eb8cefa2d37381e65dbf9c41ca350d43993",
+    "from": "0xeca74721caa0ed4c060ef948674fd7ce9c405964",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.14786295986421263 ETH",
+    "timestamp": "2025-04-09T03:24:23.000Z",
+    "riskScore": 45,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xf7c09ea764c3c14d2a7c6473b4294c7c84165a00bedc1adff6dad06823849663",
+    "from": "0x5cbb9d3c331183475327c5a546a2ba6f45ff2457",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.2854 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
+    ]
+  },
+  {
+    "transactionHash": "0xf22f16d917b1bedb6a0e721e43f4f161e9361eddcb5b038a54786696f21f4fa3",
+    "from": "0xb650d8aa9d460e8caef84bfae8bf12bddb741465",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x6401f5e89833f10762de1d8e0ff86799af3496caad33c4900c63e18bcb546310",
+    "from": "0xeca74721caa0ed4c060ef948674fd7ce9c405964",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0.16108398619033337 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 45,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xa941d223a7557beec996512d4104dc55071b941533f6357f4b1850ee81c40867",
+    "from": "0xb1b2d032aa2f52347fbcfd08e5c3cc55216e8404",
+    "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0xaa201e906d496382c2a60342ec69140def13e08cecf234e03c4c6114d9455800",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "1.27e-16 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 1.27e-16 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x267b81d241b4b6fc96038313c400936f0d91de27b46cf1946ea6c26453765197",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "0.000003723688280435 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0.000003723688280435 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x3d03d4f0a2ac0754696c6080ece62ba28c33cb3d89d61252f202a01ff7ecc2b1",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "0.000003723688410995 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0.000003723688410995 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xb57ec3edd7df7c135fade09a09a1edd36cb5de9f93cc187429aa68a1bef71700",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "1.03e-16 ETH",
+    "timestamp": "2025-04-09T03:24:23.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 1.03e-16 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0x88be1cc8042d2c7355fe6306d8b18f4c26287cc800ddbf21f1003ee9fe24fab2",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "6.596959579e-9 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 6.596959579e-9 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0x9e9b21eb052a529793ddbb308042430fb36bb00c1be80cedfcee84c758bcaa4f",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "6.624318555e-9 ETH",
+    "timestamp": "2025-04-09T03:24:11.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 6.624318555e-9 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xf4311ce787673a9f267d4f958dd9c17addefe77ada87a435ffeda83576966a92",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "7.9e-17 ETH",
+    "timestamp": "2025-04-09T03:23:59.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 7.9e-17 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0x5bed568922e3621f5b9220015180bfa91a98e151ee9d15b605bc51ca97d77b84",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "3.1e-17 ETH",
+    "timestamp": "2025-04-09T03:23:11.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 3.1e-17 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0x0bd55206b884f66a7943ec832f8ba5433dbe52a94519e62d467899d6f908016f",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "2.1764242963e-8 ETH",
+    "timestamp": "2025-04-09T03:22:59.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 2.1764242963e-8 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0x2c6e065eee420ec8c9851e22a29b98574214b93ac234aecf5713f044a2d3106b",
+    "from": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+    "to": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+    "value": "2.2604603411e-8 ETH",
+    "timestamp": "2025-04-09T03:22:59.000Z",
+    "riskScore": 30,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 2.2604603411e-8 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x1f2f10d1c40777ae1da742455c65828ff36df387 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ]
+  },
+  {
+    "transactionHash": "0xffc3239b5e3de66a56a7d2f695395d0fdba3c89fa3dcf658bcb86f49e7dadbf0",
+    "from": "0xd40c05a5637640013165f03a35ccb02db19e3176",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xcd109a5b723dd05d1295ef889433e35edbe2cdcd40320b6cf726a34186fb2d8c",
+    "from": "0x689e4a1f49f249bd1abe7e98f3681902cce5ddb3",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xe5ceaa1a00ab439c60e27bb23df4c7e3e8bfca9d4cf2aa410a52f29d37de1ff9",
+    "from": "0x304a97c9a85c92c93ca24e0a85b69f892b67355e",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xac9aef18d5997cf1cd4e2ebc35f36d2dfd81f33338d76e9e790cc37d090cc7f0",
+    "from": "0x7fd4233d897e38f941dc8cd766d842edb12483d3",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x40c2d2f9487f24e1765a86994e4bbc41f67094b1dc725a286e6e4734e3215230",
+    "from": "0xe178f4189f39ed9d75fd499f69858d097a7387ab",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x284c422eb866c543d19f3b89793baabc4bc0fdb1e4514dcda8faa84618998da1",
+    "from": "0x7c45b26c41c29330d042003cb312e73a3912024f",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xf40918f23880ddaf808b7c4ecd8050db2a7782b0cbd9ecf2c6cec6aefe88df6d",
+    "from": "0xca781a6be6d0018c681521c559a17bb00c008a8e",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xd3c77773e3e92708341115bb727f8e26adb55afb8229cb06a48e4689960d014f",
+    "from": "0x1e34e616e3eff4b174d271868b7f917ade4efde0",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xa41b133b8e54af4174d8393fd4f905ea6cc9c080e59e85aa948481ef11bc2f2b",
+    "from": "0x47c1f5752b148051597befbe9c09f4855f38e0e1",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x318928909c880ea4d62fc4a02508e4b0613d75015fb975c39c9259c109d4b177",
+    "from": "0xc1bc88e634489a723377bc387ad06a9aefc704bb",
+    "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x877c29ad480856fdb2e53b8d22c3283dd6a3b22e41b37388ac91fab2f1a861da",
+    "from": "0x0f776cc057622f0da2f257d2b987a7cf3386b7cc",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x4f2d1d4b02f43211e86c4d3617b31d7a571ef1ee29e49b46606ea19f8e13fdf5",
+    "from": "0x974caa59e49682cda0ad2bbe82983419a2ecc400",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x89ab9a6862e48f886c12cc03aa2c1e5b1fa6e994b6936477d9c9c04a34dd7761",
+    "from": "0x974caa59e49682cda0ad2bbe82983419a2ecc400",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xcd0a56efd809257e60f4e61f40e95f1c14e1a0629008ee915dbe07accb6ac368",
+    "from": "0x974caa59e49682cda0ad2bbe82983419a2ecc400",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 60,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)",
+      "Unusual transaction frequency detected"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x170774d619cfd9583f68a780fc8d932010539a7fb68b28520f7c1aa672a29596",
+    "from": "0x1104d2812dcf63c0474b439aea94c3cdbf2960a4",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x2d6117bc976b2477ee8d7a23ffd9ddd358aca0f808f1d528d327d76443a50a61",
+    "from": "0xcb7aa87867d878d08f5264f59c405ef055a4e9f3",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x2109380ea221655bb99d0e9cdeb2a156a9e37a2ac0d8e8dfd9062304cf301601",
+    "from": "0xc1da33e8d60daf4f93a52357a57a076f44c45759",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xb44c33ee4f58a6ec239f8ca41baef9fb7ba3a876a59900cac126faaf1e5aa58f",
+    "from": "0xc1ac8e1be12886f695de5f8ab86c779dbcc48106",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x1bcc931425c0e39babe1c9dae7d13abde41363f07933f308f76b5089e908707c",
+    "from": "0x996e94333fc43a80c07a9c94aa2950fbc840a14e",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x96897276568f1d5529b019b8d1f7fb9590174a620aac66c02971aeb796d55184",
+    "from": "0x50e2e09b3dcb1be58d58cb33a6b2c5eca16af5a2",
+    "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:47.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0xdac17f958d2ee523a2206206994597c13d831ec7 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x4d244add5587200543fb79bcebab2cb724908c38d95664f4382931c2dbffd2a6",
+    "from": "0x6f48dad77188244cc75ca620062c95e8347410f9",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x4c7a32572d99aaea619874a38bf126267cb83ee397de66b2368070350047e360",
+    "from": "0x21a31ee1afc51d94c2efccaa2092ad1028285549",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x737fb1a8eff2c760fa9206f492b631d0469f64c6cb2c0b14b842c5d44e791033",
+    "from": "0xac95ebf5541d6e32bb3901784b4028fded1258c7",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:59.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x6769cb67ef3f82a622a2329c8c62acd6b642822976290f8b0ab8b5bd3cb55210",
+    "from": "0xf4b571f2c47d12eed490d7336fba718f90cb8e74",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:23:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x3c05e6af6dd166082207319cfa475f55f5068b1a7f3f22efbbcac8150da720ca",
+    "from": "0x05aca0927e24e7552fca69562d325266358c46d9",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:22:59.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xe2bf265863f43d783a08feb09cfbb72c5c0e813b839d2129f34418e2821e2351",
+    "from": "0xaec7532de39ecc2b6cc6a029ff17d7cad079c11e",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:22:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x2641b3b0a6242cbec225f99ef2853977116a4b440d80083b57091a03da2497d8",
+    "from": "0x50bc48c452856e20a321f751764a401f683561dd",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:22:35.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x25d8e78d35f86ba5226c06745100176f9a630e2e7e2cacc2ae73e27f9750992a",
+    "from": "0x00e85ea32acf252a149369227319eed7ebac025d",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:22:11.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xcf5932dd487b40630a8d07d0bd5e7f0f08576f4ebeb3765cb0b083ab62a311a5",
+    "from": "0xa9a8e0c8c90009d7f00bd556e89ec0015540c642",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:21:23.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x15fbeb95d2fa56b7b299fc33eec8d578fe2c2a4cddd7e616fcc883ff7f89c242",
+    "from": "0xee4518588eb7e3bbca71c15efe053223aaaa68b8",
+    "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:20:59.000Z",
+    "riskScore": 65,
+    "requires2FA": true,
+    "userType": "MULTI_STEP",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "High-risk function call: 0x095ea7b3",
+      "Interaction with monitored address: 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 (ignoring due to small value)"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x4a31dd2a9405011f13bc5cf7b2f8ec50cd18b873e8f68bb9c3cb5098f5f83f67",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-08T07:19:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x5efc1db2f1286acc140e99d8b022e6f0ab418c0efdaa53b122b195c454f07a67",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-08T07:15:59.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x58d87421bd588259d467d5445394a4c33d7c30883732d62c88d067cb398939db",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T23:43:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xea92fa15c379e5ec293b74523df27a1147f42922aabfc92771d2e7e3134ca4ce",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T20:31:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x2a59fcdf33f001b215fb567ef597fd183a1779e1a8659b72fe971ad3fc865f9d",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T19:49:35.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xefc2713d8525f381f74f8ffb124633fb72cb7824a97b7d1bfd7b456e93557f9a",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T18:58:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xeb39caf2e86ff94921499eb84b9af9fbd9e1e185968b652e8fa6a263baf85310",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T18:28:47.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x3bb4da4e01566d5f9e47ab92ccb39d1ce46e09d513abcf1919f30361f7ef1382",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T15:54:23.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x50dc9525080a262cfdee3bca19e444f0f65cf9f7bb8613bb391d18d8695919d2",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T14:40:23.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0xd9d6eb67b986cdeabb6bba811060d3f8268b559c1742b4e86526079228363ebe",
+    "from": "0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91",
+    "to": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "value": "0 ETH",
+    "timestamp": "2025-04-07T13:12:11.000Z",
+    "riskScore": 40,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Detection module result: High-risk transaction detected: Sensitive function call detected. 2FA verification required.",
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction"
+    ],
+    "detectionServiceResult": {
+      "requires2FA": true,
+      "reason": "High-risk transaction detected: Sensitive function call detected. 2FA verification required."
+    }
+  },
+  {
+    "transactionHash": "0x9709b579a6a62827679bbf2e0426acd63c5a7722bc363c8ea501adfdcde721ae",
+    "from": "0x9b8df321b64ef046997bdec9497645166bbcaf2e",
+    "to": "0xbe8e3e3618f7474f8cb1d074a26affef007e98fb",
+    "value": "0 ETH",
+    "timestamp": "2024-05-10T01:30:35.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xbe8e3e3618f7474f8cb1d074a26affef007e98fb (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x44eb19f0d8246bf415872e12351f3992fda46cbe98a02041c150f82414d2f4bb",
+    "from": "0xed4daaf5e86f6eddbd358266369a804563f434e1",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:24:23.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0xfffbea42b2eb4846380db367d55bdf5af8e9dc59df204f628908ca12ab4ecbde",
+    "from": "0x011dddd5b5470d2818bffb400b4e38949fe21ac3",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:21:23.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x3c1f331232ce3570fe97fdae8c8c48f3d51229049546cc8d97dca56790e1ae5f",
+    "from": "0xbbece504e0a3d213f3e3d8235607a1a27439f46b",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0.001053226559565228 ETH",
+    "timestamp": "2025-04-09T03:18:59.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff"
+    ]
+  },
+  {
+    "transactionHash": "0xfc98e350c87d9389539e219b971a14116876284f9b1dfc92bbaf997a5aeef9b7",
+    "from": "0x4a9aa9a0ca3aec0beadb625f621687e8bd291255",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:17:35.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x8aaacdb7900656ced0130b9021e2b77b3d09086b59769d6dac9cefabe623bb01",
+    "from": "0x15c897b3286c2a599be7220ffbc3808618987cd3",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:14:47.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0xf8705cb41bf8fd684245975ee58698dd5d4b9f85d474c07c0fb8d94d55b2a570",
+    "from": "0x85582411dadbcc2564ce95cbbfb59b7c76348fc4",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0.01694083765383516 ETH",
+    "timestamp": "2025-04-09T03:12:59.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff"
+    ]
+  },
+  {
+    "transactionHash": "0x9e0766ae6ee750d9e99a1d282cbb0fc2fd74a75fa6513b4279fce09e5be5e2a5",
+    "from": "0xed4daaf5e86f6eddbd358266369a804563f434e1",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:11:35.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  },
+  {
+    "transactionHash": "0x0a731b20d760e112373c2dcf35f531bef90e7f86346f9c06f98da17709b35f11",
+    "from": "0x791cec90bf6d6ceefea9f90d25d82a032a0ccb10",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0.09347810353114133 ETH",
+    "timestamp": "2025-04-09T03:09:23.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff"
+    ]
+  },
+  {
+    "transactionHash": "0xa79256499da4331f0f95ed245f38f911c8cfd065c48d528b52a7838972ebf163",
+    "from": "0x387edef3b116399b86a204adb812a849045d6dd9",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0.000994600177565234 ETH",
+    "timestamp": "2025-04-09T03:08:23.000Z",
+    "riskScore": 25,
+    "requires2FA": true,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff"
+    ]
+  },
+  {
+    "transactionHash": "0x3ac290a4698c0b743d881974460694a1e44a460b3bfd3e866ea519bff4beec4c",
+    "from": "0x120166dbfc6ad9f857936fcb6e90a779d4b478a0",
+    "to": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+    "value": "0 ETH",
+    "timestamp": "2025-04-09T03:08:11.000Z",
+    "riskScore": 10,
+    "requires2FA": false,
+    "userType": "REGULAR",
+    "riskFactors": [
+      "Very small value transaction: 0 ETH",
+      "Smart contract interaction",
+      "Interaction with monitored address: 0xdef1c0ded9bec7f1a1670819833240f027b25eff (ignoring due to small value)"
+    ]
+  }
+]

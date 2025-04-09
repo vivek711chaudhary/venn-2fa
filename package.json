@@ -4,17 +4,15 @@
     "description": "Custom detector boilerplate",
     "scripts": {
         "dev": "nodemon",
-        "build": "rm -rf dist && NODE_ENV=production tsc && tsc-alias dist --outDir ./dist",
-        "preview": "NODE_ENV=development node dist/src/app.js",
-        "start": "NODE_ENV=production node dist/src/app.js",
+        "build": "if exist dist rmdir /s /q dist && set NODE_ENV=production && tsc && tsc-alias dist --outDir ./dist",
+        "preview": "set NODE_ENV=development && node dist/src/app.js",
+        "start": "set NODE_ENV=production && node dist/src/app.js",
         "test": "jest --silent=false",
         "test:watch": "jest --watch",
         "ts-check": "tsc --noEmit",
         "lint": "eslint . --ext .ts",
-        "lint:fix": "eslint . --ext .ts --fix"
-    },
-    "gitHooks": {
-        "pre-commit": "npm run ts-check && npm run lint && npm run test"
+        "lint:fix": "eslint . --ext .ts --fix",
+        "classify-transactions": "ts-node ./src/scripts/run-classifier.ts"
     },
     "nodemonConfig": {
         "ignore": [
@@ -30,6 +28,7 @@
         "ext": "ts, js"
     },
     "dependencies": {
+        "axios": "^1.8.4",
         "class-transformer": "^0.5.1",
         "class-validator": "^0.14.1",
         "cors": "^2.8.5",

@@ -84,6 +84,16 @@ const MultiStepDemo = () => {
     }
   };
 
+  const handleVerificationCancel = () => {
+    console.log('❌ Verification cancelled by user');
+    setActiveStep(0);
+    setTransaction(null);
+    setVerificationCode('');
+    setError('Transaction was canceled. Please start again to complete the transaction.');
+    setTransactionId(null);
+    setVerificationSuccess(false);
+  };
+
   const handleReset = () => {
     setActiveStep(0);
     setTransaction(null);
@@ -167,6 +177,14 @@ const MultiStepDemo = () => {
                       sx={{ mt: 3, mb: 2 }}
                     >
                       {loading ? <CircularProgress size={24} /> : 'Verify Transaction'}
+                    </Button>
+                    <Button
+                      fullWidth
+                      variant="outlined"
+                      onClick={handleVerificationCancel}
+                      sx={{ mb: 2 }}
+                    >
+                      Cancel Transaction
                     </Button>
                   </Box>
                 </>

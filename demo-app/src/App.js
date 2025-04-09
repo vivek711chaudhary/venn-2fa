@@ -10,6 +10,7 @@ import WhaleUserDemo from './pages/WhaleDemo';
 import DefiUserDemo from './pages/DefiUserDemo';
 import MultiStepDemo from './pages/MultiStepDemo';
 import TOTPSetupPage from './pages/TOTPSetupPage';
+import TransactionExplorer from './pages/TransactionExplorer';
 
 // Create a theme
 const theme = createTheme({
@@ -42,6 +43,7 @@ function App() {
             <Button color="inherit" component={Link} to="/defi-user">DeFi User</Button>
             <Button color="inherit" component={Link} to="/multi-step">Multi-Step</Button>
             <Button color="inherit" component={Link} to="/totp-setup">TOTP Setup</Button>
+            <Button color="inherit" component={Link} to="/explorer">Explorer</Button>
           </Toolbar>
         </AppBar>
         <Container maxWidth="lg" sx={{ mt: 4 }}>
@@ -53,6 +55,7 @@ function App() {
               <Route path="/defi-user" element={<DefiUserDemo />} />
               <Route path="/multi-step" element={<MultiStepDemo />} />
               <Route path="/totp-setup" element={<TOTPSetupPage />} />
+              <Route path="/explorer" element={<TransactionExplorer />} />
             </Routes>
           </Box>
         </Container>

@@ -102,6 +102,8 @@ const DefiUserDemo = () => {
     setTransactionId(null);
     setShowTOTPInfo(false);
     setTotpError('');
+    setVerificationStatus('');
+    setError('Transaction was canceled. Verification required for completion.');
   };
 
   return (
