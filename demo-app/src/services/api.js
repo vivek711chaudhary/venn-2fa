@@ -230,6 +230,35 @@ const api = {
       
       const data = await response.json();
       console.log('✅ Detect API Response:', data);
+      
+      // For the demo purposes, override the API response for certain user types
+      // to ensure proper thresholds are respected
+      if (data.detected && transactionData.userType) {
+        const valueInEth = transactionData.trace && transactionData.trace.value 
+          ? parseFloat(transactionData.trace.value) / 1e18 
+          : 0;
+          
+        // For REGULAR users, disable 2FA if amount < 1 ETH regardless of other factors
+        if (transactionData.userType === 'REGULAR' && valueInEth < 1) {
+          console.log('✅ Overriding API response for REGULAR user with small transaction');
+          return {
+            ...data,
+            detected: false,
+            message: 'Transaction approved without 2FA (amount below threshold)'
+          };
+        }
+        
+        // For WHALE users, disable 2FA if amount < 10 ETH regardless of other factors
+        if (transactionData.userType === 'WHALE' && valueInEth < 10) {
+          console.log('✅ Overriding API response for WHALE user with transaction below threshold');
+          return {
+            ...data,
+            detected: false,
+            message: 'Transaction approved without 2FA (amount below threshold for WHALE user)'
+          };
+        }
+      }
+      
       return data;
     } catch (error) {
       console.error('❌ Error in detect API:', error);
@@ -238,11 +267,65 @@ const api = {
       // Generate a random transaction ID
       const transactionId = 'mock-' + Math.random().toString(36).substring(2, 15);
       
+      // Extract transaction value and convert to ETH
+      const valueInEth = transactionData.trace && transactionData.trace.value 
+        ? parseFloat(transactionData.trace.value) / 1e18 
+        : 0;
+      
+      // Determine if 2FA is required based on transaction value and user type
+      let requires2FA = false;
+      let message = 'Transaction processed successfully without 2FA';
+      
+      // Determine 2FA requirements based on user type and transaction value
+      const userType = transactionData.userType || 'REGULAR';
+      
+      switch (userType) {
+        case 'WHALE':
+          // Whale users only require 2FA for high-value transactions (>= 10 ETH)
+          if (valueInEth >= 10) {
+            requires2FA = true;
+            message = `Whale transaction (${valueInEth} ETH) requires 2FA verification`;
+          }
+          break;
+          
+        case 'DEFI':
+          // DeFi users require 2FA for:
+          // 1. Transactions >= 1 ETH
+          // 2. Contract interactions (not all 0x addresses, but actual contract calls)
+          const isContractInteraction = transactionData.trace && 
+                                        transactionData.trace.input && 
+                                        transactionData.trace.input !== '0x' && 
+                                        transactionData.trace.input.length > 10;
+                                      
+          if (valueInEth >= 1 || isContractInteraction) {
+            requires2FA = true;
+            message = 'DeFi transaction requires 2FA verification';
+          }
+          break;
+          
+        case 'MULTI_STEP':
+          // Multi-step users always require 2FA
+          requires2FA = true;
+          message = 'Multi-step transaction requires 2FA verification';
+          break;
+          
+        case 'REGULAR':
+        default:
+          // Regular users require 2FA for transactions >= 1 ETH
+          if (valueInEth >= 1) {
+            requires2FA = true;
+            message = `High-value transaction (${valueInEth} ETH) requires 2FA verification`;
+          }
+          break;
+      }
+      
+      console.log(`Mock transaction for ${userType} user: ${valueInEth} ETH, 2FA required: ${requires2FA}`);
+      
       // Mock response for demonstration
       return {
-        requiresTwoFactorAuth: true,
+        detected: requires2FA,
         transactionId: transactionId,
-        message: 'Transaction requires 2FA verification (mock)'
+        message: message
       };
     }
   },

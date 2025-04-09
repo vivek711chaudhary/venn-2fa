@@ -120,7 +120,7 @@ const DefiUserDemo = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
             <Paper sx={{ p: 3 }}>
-              <TransactionForm onSubmit={handleTransactionSubmit} />
+              <TransactionForm onSubmit={handleTransactionSubmit} userType="DEFI" />
             </Paper>
             
             {verificationStatus && (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button, Typography, Alert, CircularProgress } from '@mui/material';
 
-const TransactionForm = ({ onSubmit }) => {
+const TransactionForm = ({ onSubmit, userType = 'REGULAR' }) => {
   const [formData, setFormData] = useState({
     recipientAddress: '',
     amount: '',
@@ -52,6 +52,7 @@ const TransactionForm = ({ onSubmit }) => {
       const requestData = {
         chainId: 1, // Number, not string
         hash: "0x" + Math.random().toString(16).substring(2, 10), // Shorter hash like in the example
+        userType: userType, // Include the user type in the request
         trace: {
           from: "0x1111222233334444555566667777888899990000", // Example sender address
           to: formData.recipientAddress,
@@ -79,6 +80,7 @@ const TransactionForm = ({ onSubmit }) => {
       };
       
       console.log('Sending request data:', requestData);
+      console.log(`Transaction request for ${userType} user with amount: ${formData.amount} ETH`);
       await onSubmit(requestData);
       setSuccess('Transaction submitted successfully');
       setFormData({ 

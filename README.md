@@ -212,10 +212,10 @@ Our implementation includes comprehensive test suites:
 ### Prerequisites
 
 - Node.js v14+
-- Yarn package manager
+- npm or Yarn package manager
 - Authenticator app (Google Authenticator, Authy, etc.)
 
-### Installation
+### Installation & Setup
 
 1. Clone the repository
    ```
@@ -223,30 +223,189 @@ Our implementation includes comprehensive test suites:
    cd venn-custom-detection
    ```
 
-2. Install dependencies
+2. Install backend dependencies and start the server
    ```
+   npm install
+   # or 
    yarn install
-   ```
 
-3. Start the development server
-   ```
+   # Start the development server
+   npm run dev
+   # or
    yarn dev
    ```
 
-4. Start the demo app
+3. Start the frontend demo app
    ```
    cd demo-app
+   npm install
+   # or 
    yarn install
+
+   # Start the frontend app
+   npm start
+   # or
    yarn start
    ```
+
+4. TOTP Setup (for testing)
+   - Navigate to the "TOTP Setup" page in the demo app
+   - The system uses a hardcoded TOTP secret for testing: `JBSWY3DPEHPK3PXP`
+   - (a) Scan the QR code with your authenticator app or enter the secret manually
+   - (b) The authenticator app will generate 6-digit codes that change every 30 seconds
+   - Instead of (a) and (b) you can simply you can go to https://totp.app/ : Paste the secret and then proceed further
+   - Enter the current code from your authenticator app to verify the setup
+
+### Environment Setup (Optional)
+
+Create a `.env` file with:
+
+```
+PORT=3000
+HOST=localhost
+LOG_LEVEL=debug
+```
 
 ### Running Tests
 
 ```
+npm test
+# or
 yarn test
 ```
 
-## Conclusion
+### Docker Deployment
+
+```bash
+docker build -f Dockerfile . -t my-custom-detector
+```
+
+## Transaction Classifier
+
+Our system includes a powerful transaction classifier that analyzes real blockchain transactions and evaluates their need for 2FA verification:
+
+### Features
+
+- **Real-time Blockchain Analysis**: Fetches and classifies transactions from multiple blockchain networks
+- **Multi-factor Risk Assessment**: Evaluates transactions based on:
+  - Transaction value (with thresholds for different user types)
+  - Smart contract interactions and high-risk function calls
+  - Monitored address interactions
+  - Transaction frequency patterns
+  - Integration with main detection service
+
+- **User-specific TOTP Management**: 
+  - Generates unique TOTP secrets for each user address
+  - Maintains user state across multiple transactions
+  - Adapts security level based on user type (REGULAR, WHALE, DEFI, MULTI_STEP)
+  - Verifies and records transaction authentications
+
+- **Risk Score Calculation**:
+  - Comprehensive scoring system (0-100) based on multiple risk factors
+  - Configurable threshold (default: 20) to balance security and convenience
+  - Special handling for very small transactions to prevent unnecessary verification
+
+- **Chain Support**:
+  - Currently supports Ethereum mainnet
+  - Extensible to other EVM-compatible chains (Sepolia, Polygon, BSC, Arbitrum, etc.)
+
+### Risk Factors and Weights
+
+| Risk Factor | Weight | Notes |
+|-------------|--------|-------|
+| Detection Module Flag | +30 | Main detection service identified risk |
+| High Value (10+ ETH) | +50 | Automatically sets user to WHALE type |
+| Significant Value (5+ ETH) | +30 | High risk requiring 2FA |
+| Medium Value (1+ ETH) | +15 | Contributes to risk score |
+| Smart Contract Interaction | +10 | Base score for any contract interaction |
+| High-risk Function Call | +25 | Functions like approve, transferFrom, etc. |
+| Monitored Address Interaction | +15 | For known high-risk or important addresses |
+| Unusual Transaction Frequency | +20 | Multiple transactions in short time window |
+
+### Transaction Classification Output
+
+The classifier produces detailed analysis files in JSON format:
+
+1. **Transaction Analysis**: Comprehensive evaluation of each transaction including:
+   - Transaction details (hash, from, to, value, timestamp)
+   - Risk score and 2FA requirement determination
+   - User type classification
+   - Detailed risk factors
+   - Detection service results
+
+2. **TOTP States**: User-specific TOTP information including:
+   - User address
+   - User type
+   - TOTP secret
+   - Current verification code
+   - Setup status
+   - Last verification timestamp
+
+### Usage
+
+Run the transaction classifier with:
+
+```bash
+npm run classify-transactions
+```
+
+Results will be saved to:
+- `output/transaction-analysis-[timestamp].json`
+- `output/totp-states-[timestamp].json`
+
+## Transaction Explorer
+
+The Transaction Explorer is an interactive interface for blockchain transaction analysis and 2FA requirement determination in real-time. It serves as a visual demonstration of how the 2FA system identifies high-risk transactions across multiple blockchain networks.
+
+### Features
+
+- **Multi-Chain Support**: Explore transactions on multiple blockchains:
+  - Ethereum Mainnet
+  - Polygon
+  - Arbitrum
+  - Binance Smart Chain (BSC)
+
+- **Transaction Analysis**: Comprehensive risk assessment of each transaction showing:
+  - Transaction hash and basic details
+  - Risk score calculation (0-100 scale)
+  - User type categorization (REGULAR, WHALE, DEFI, MULTI_STEP)
+  - 2FA requirement status with visual indicators
+  - Detailed risk factors for each transaction
+
+- **Interactive Interface**:
+  - Address input with predefined options for quick testing
+  - Blockchain network selection
+  - One-click transaction lookup
+  - Detailed results table with sorting and filtering
+  - Risk factor breakdown cards for select transactions
+  - Links to blockchain explorers for verification
+
+- **Fallback Mechanism**:
+  - Mock data generation when blockchain APIs are unavailable
+  - Demonstrates all risk scenarios even when real data cannot be fetched
+  - Consistent experience across all supported chains
+
+### How It Works
+
+1. **Input Address and Chain**: Enter any blockchain address or select from predefined addresses for testing
+2. **Fetch Transactions**: The system retrieves recent transactions for the specified address
+3. **Risk Analysis**: Each transaction is analyzed against multiple risk factors:
+   - Value-based risk (1+ ETH, 5+ ETH, 10+ ETH)
+   - Smart contract interactions and function signatures
+   - Known/monitored address interactions
+4. **Results Display**: Color-coded risk scores and visual 2FA requirement indicators show which transactions would require additional verification
+
+### Usage
+
+Access the Transaction Explorer through the "Explorer" link in the navigation menu. For optimal experience:
+
+- Try addresses with varied transaction patterns (use the predefined options)
+- Compare risk assessments across different blockchains
+- Examine the detailed risk factors for high-scoring transactions
+
+This tool provides a visual representation of how the 2FA system works in practice and helps users understand when and why additional verification would be required for their blockchain transactions.
+
+### Conclusion
 
 This 2FA Transaction Security System provides robust protection for blockchain transactions by implementing sophisticated risk detection and requiring additional verification for high-risk operations. The system strikes a balance between security and usability through:
 

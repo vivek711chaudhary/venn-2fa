@@ -89,7 +89,7 @@ const RegularDemo = () => {
         </Typography>
 
         <Paper sx={{ p: 3, mt: 3 }}>
-          <TransactionForm onSubmit={handleTransactionSubmit} />
+          <TransactionForm onSubmit={handleTransactionSubmit} userType="REGULAR" />
         </Paper>
 
         {verificationStatus && (

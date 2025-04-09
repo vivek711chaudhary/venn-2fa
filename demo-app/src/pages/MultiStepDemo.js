@@ -138,7 +138,7 @@ const MultiStepDemo = () => {
                   <Typography variant="h6" gutterBottom>
                     Enter Transaction Details
                   </Typography>
-                  <TransactionForm onSubmit={handleTransaction} />
+                  <TransactionForm onSubmit={handleTransaction} userType="MULTI_STEP" />
                 </>
               )}
 
